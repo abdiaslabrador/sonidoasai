@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="soundtest.css">
+    <title>asai sound</title>
+</head>
+<body>
+     <!-- Botón -->
+      <div class="margin-container">
+          <div class="container-asai">
+              <div class="asai-button asai" onclick="playSoundBatidos()">🔊 BATIDOS</div>
+              <div class="asai-button batidos" onclick="playSoundAsai()">🔊 AÇAÍ</div>
+          </div>
+      </div>
+
+  <!-- Audio oculto -->
+  <audio id="sonido_asai" src="sonido_asai.mp3"></audio>
+  <audio id="sonido_batidos" src="sonido_batidos.mp3"></audio>
+  <script>
+    function playSoundAsai() {
+      const audio = document.getElementById("sonido_asai");
+      audio.currentTime = 0; // Reinicia el sonido por si ya se había reproducido
+      audio.play();
+    }
+
+    function playSoundBatidos() {
+      const audio = document.getElementById("sonido_batidos");
+      audio.currentTime = 0; // Reinicia el sonido por si ya se había reproducido
+      audio.play();
+    }
+  </script>
+</body>
+</html>
