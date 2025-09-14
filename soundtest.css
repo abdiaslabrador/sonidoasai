@@ -1,24 +1,25 @@
 .margin-container{
-    margin: 0 auto;     
+    margin:  auto;     
 }
 
 .container-asai{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 }
 
 .asai-button{
-    width: 90%;
-    border: 2px solid black;
-    border-radius: 2%;
+    width: auto;
+    border: 0;
     color: white;
-    padding: 15px 25px;
+    padding: 15% 25%;
     margin-bottom: 20px;
+    border-radius: 15px; 
 }
 
 .asai{
     background-color: rgb(78, 78, 228);
+    font-size: 24px;
 }
 
 .batidos{
