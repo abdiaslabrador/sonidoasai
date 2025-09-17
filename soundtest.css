@@ -12,9 +12,14 @@
     width: auto;
     border: 0;
     color: white;
-    padding: 15% 25%;
+    min-width: 450px;
+    min-height: 200px;
     margin-bottom: 20px;
     border-radius: 15px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .asai{
@@ -24,4 +29,11 @@
 
 .batidos{
     background-color: rgb(108, 37, 103);
+    font-size: 28px;
+}
+
+@media (max-width: 420px) {
+  .asai-button{
+    min-width: 200px;
+  }
 }
